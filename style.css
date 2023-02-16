@@ -1,0 +1,121 @@
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --dark-green: #1a4031;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: var(--Cream);
+}
+.tarjeta {
+  width: 343px;
+  height: 612px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 35px auto 40px auto;
+  background-color: var(--White);
+}
+.tarjeta__primera-seccion__imagen-perfume {
+  width: 100%;
+}
+.tarjeta__segunda-seccion__nombre-producto {
+  margin: 18px 24px 8px 24px;
+  color: var(--Dark-grayish-blue);
+  font-size: 1em;
+  letter-spacing: 3px;
+}
+.tarjeta__segunda-seccion__nombre-producto__titulo-producto {
+  font-family: "Fraunces", serif;
+  margin: 0 24px 16px 24px;
+  font-size: 2.2em;
+  color: var(--Very-dark-blue);
+  line-height: 34px;
+}
+.tarjeta__segunda-seccion__nombre-producto__titulo-producto__descripcion-producto {
+  margin: 0 24px 25px 24px;
+  color: var(--Dark-grayish-blue);
+  font-size: 0.96em;
+  line-height: 22px;
+}
+.tarjeta__precio {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 0 24px 16px 24px;
+}
+.tarjeta__precio__valor {
+  font-family: "Fraunces", serif;
+  font-size: 2.3em;
+  color: var(--Dark-cyan);
+}
+.tarjeta__precio__valor__valor-tachado {
+  text-decoration: line-through;
+  color: var(--Dark-grayish-blue);
+}
+.tarjeta__segunda-seccion__nombre-producto__titulo-producto__descripcion-producto__button {
+  width: 296px;
+  height: 50px;
+  background-color: var(--Dark-cyan);
+  border: none;
+  border-radius: 8px;
+  color: var(--White);
+  font-size: 1.1em;
+  font-weight: 700;
+  display: block;
+  margin: auto;
+}
+.tarjeta__segunda-seccion__nombre-producto__titulo-producto__descripcion-producto__button:hover {
+  cursor: pointer;
+  background-color: var(--dark-green);
+}
+.tarjeta__segunda-seccion__nombre-producto__titulo-producto__descripcion-producto__button__icon {
+  margin-right: 12px;
+}
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* -------------------Desktop--------------------- */
+
+@media (min-width: 620px) {
+  .tarjeta {
+    width: 620px;
+    height: 450px;
+    display: flex;
+    margin: 130px auto 75px;
+  }
+  .tarjeta__primera-seccion {
+    width: 300px;
+  }
+  .tarjeta__primera-seccion__imagen-perfume {
+    content: url(./images/image-product-desktop.jpg);
+  }
+  .tarjeta__segunda-seccion {
+    width: 300px;
+  }
+  .tarjeta__segunda-seccion__nombre-producto {
+    margin: 32px 24px 16px 24px;
+  }
+  .tarjeta__segunda-seccion__nombre-producto__titulo-producto__descripcion-producto {
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
+  .tarjeta__precio {
+    margin-bottom: 25px;
+  }
+  .tarjeta__segunda-seccion__nombre-producto__titulo-producto__descripcion-producto__button {
+    width: 240px;
+  }
+}
